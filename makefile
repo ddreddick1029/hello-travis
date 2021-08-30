@@ -1,4 +1,4 @@
-#
+
 # makefile 
 #
 # input file for 'make' build tool ( /usr/bin/make )
@@ -23,7 +23,7 @@ default:
 
 compile: src/Hello.java src/HelloTest.java $(JUNIT_JAR)
 	cd src; javac -cp .:../$(JUNIT_JAR) HelloTest.java
-	cd src; javac Hello.java
+	cd src; javac Hello.j
 
 clean:
 	rm -f *~
