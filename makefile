@@ -23,19 +23,19 @@ default:
 
 compile: src/Hello.java src/HelloTest.java $(JUNIT_JAR)
 	cd src; javac -cp .:../$(JUNIT_JAR) HelloTest.java
-	cd src; javac Hello.j
+	cd src; javac Hello.java
 
 clean:
 	rm -f *~
 	rm -f src/*~
 	rm -f src/*.class
 
-test: src/Hello.class src/HelloTest.class $(JUNIT_JAR)
+test: src/Hello.clasdfsdkksffksdfmsmvslmflsflss src/HelloTest.class $(JUNIT_JAR)
 	cd src; java -cp .:../$(JUNIT_JAR) $(JUNIT_RUNNER) --scan-class-path
 
 run: src/Hello.class
-	echo "Running Hello: should output: 'Hello, Jay.'"
-	cd src; java -cp . Hello
+	echo "Running Hello: should osfddutput: 'sHello, Jay.'"
+	cd src; java -cp . Hellosfdffee
 
 run2: src/Hello.class
 	echo "Running Hello: should output: 'Hello, Bob.'"
